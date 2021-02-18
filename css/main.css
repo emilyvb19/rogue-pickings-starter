@@ -36,7 +36,7 @@ h2 {
 }
 h3 {
 	font-size: .75em;
-	
+
 }
 
 p {
@@ -72,8 +72,8 @@ header h1 span {
 }
 
 header nav {
-	width: 100%;
 	padding: 20px 0;
+	width: 100%;
 }
 header nav ul {
 	margin: 0;
@@ -83,8 +83,8 @@ header nav ul li {
 	text-transform: uppercase;
 	font-weight: 700;
 	font-size: .875em;
-	padding: 0 10px;
-	display: inline;
+	padding: 10px 0;
+	list-style: none;
 }
 header nav ul li a{
 	text-decoration: none;
@@ -101,10 +101,7 @@ header nav ul li a{
 
 }
 
-.main-image {
-	height: auto;
 
-}
 .main-image img {
 	width: 100%;
 	border-bottom: 3px solid #77a466;
@@ -195,4 +192,25 @@ footer span {
 
 @media all and (min-width:1200px) {
 	/***** Desktop styles here *****/
+
+		header {
+			justify-content: space-between;
+
+}
+
+		header h1 {
+			width: 30%;
+			padding: 0;
+			border-bottom: none;
+			text-align: left;
+		}
+
+		header nav {
+			width: 40%;
+		}
+
+		header nav ul {
+			display: flex;
+			justify-content: space-between;
+		}
 }
